@@ -7,11 +7,11 @@ type Props = {
 
 export default function CardItem({ name, img }: Props) {
 	return (
-		<div className={`max-h-[556px] cursor-pointer relative`}>
+		<div className={`max-w-[800px] object-center cursor-pointer relative`}>
 			<img
 				src={img}
 				alt={name}
-				className="w-full max-h-[556px] object-cover rounded-xl"
+				className="w-full max-h-[300px] object-cover rounded-xl"
 			/>
 
 			<div

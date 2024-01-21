@@ -57,17 +57,11 @@ export default function HomePage({}: Props) {
 					</motion.div>
 				</div>
 
-				<motion.div
-					// variants={fadeIn("up", 0.2)}
-					// initial={{ y: 80, opacity: 0 }}
-					// whileInView={"show"}
-					// viewport={{ once: false, amount: 0.7 }}
-					className="grid grid-cols-1 justify-items-center items-center md:grid-cols-2 gap-4 mx-auto my-4"
-				>
+				<div className="grid grid-cols-1 justify-items-center items-center md:grid-cols-2 gap-4 mx-auto my-4">
 					{getData.map((item: any) => (
 						<CardList key={item.id} data={item} />
 					))}
-				</motion.div>
+				</div>
 
 				<motion.div
 					variants={fadeIn("up", 0.2)}

@@ -6,7 +6,7 @@ type Props = {
 
 export default function CardList({ data }: Props) {
 	return (
-		<div className="col-span-1 flex flex-col gap-2">
+		<div className="flex flex-col gap-2 ">
 			<CardItem name={data.id} img={data.url} />
 			<p className="md:hidden">{data.id}</p>
 		</div>
